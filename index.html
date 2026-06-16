@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFazenda: O Desafio do Equilíbrio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>EcoFazenda 🌾</h1>
+        <p>Encontre o equilíbrio entre produzir e preservar!</p>
+
+        <div class="status-container">
+            <div class="status-bar">
+                <span>Produção: <span id="prod-val">50</span>%</span>
+                <div class="bar"><div id="bar-prod" style="width: 50%;"></div></div>
+            </div>
+            <div class="status-bar">
+                <span>Ambiente: <span id="amb-val">50</span>%</span>
+                <div class="bar"><div id="bar-amb" style="style: width: 50%;"></div></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 id="rodada">Rodada 1/5</h3>
+            <p id="pergunta">Um grupo de pragas apareceu na plantação. O que você faz?</p>
+            <div class="options">
+                <button onclick="escolha(1)">Usar pesticida químico pesado (Rápido e barato)</button>
+                <button onclick="escolha(2)">Usar controle biológico e defensivos naturais (Mais lento)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
